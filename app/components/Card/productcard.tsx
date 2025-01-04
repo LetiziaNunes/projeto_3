@@ -20,7 +20,7 @@ const ProductCard: React.FC<Product & { onAddToCart: () => void }> = ({
       />
       <h2 className="text-lg font-semibold mb-2">{title}</h2>
       <p className="text-gray-600 mb-2">
-        <strong>Price:</strong> ${price}
+        <strong>Price:</strong> {price}€
       </p>
       <p className="text-gray-600 mb-2">
         <strong>Description:</strong> {description}
@@ -37,7 +37,7 @@ const ProductCard: React.FC<Product & { onAddToCart: () => void }> = ({
       )}
       <button
         onClick={onAddToCart}
-        className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-red-600 transition mt-2"
+        className="bg-[#72050e] text-white px-4 py-2 rounded shadow-md hover:bg-red-600 transition mt-2"
       >
         Add to Cart
       </button>

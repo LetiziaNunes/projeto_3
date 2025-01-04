@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   margin: 0;
   padding-top: 0;
@@ -19,7 +17,6 @@ body {
   background-attachment: fixed;
 }
 
-
 main {
   /* Reset e Box Model */
   width: fit-content;
@@ -29,5 +26,25 @@ main {
   overflow-y: auto;
 
   /* Fundo */
-  background: whitesmoke;
+  background: rgba(245, 245, 245, 0.616);
+}
+
+/* Customização da barra de rolagem */
+main::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+main::-webkit-scrollbar-track {
+  background: #e0e0e000; /* Cor do trilho da barra */
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #72050e; /* Cor do polegar */
+  border-radius: 10px;
+  border: 2px solid #e0e0e0; /* Dá um espaçamento visual com o trilho */
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0; /* Cor do polegar ao passar o mouse */
 }
