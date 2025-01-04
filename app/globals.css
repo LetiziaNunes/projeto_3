@@ -2,151 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary-red: #72050e;
-  --secondary-red: #e63946;
-  --hover-red: #ff6b6b;
-  --moss-green: #556b2f;
-  --beige: #f5f5dc;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary-red: #4e0309;
-    --secondary-red: #a62639;
-    --hover-red: #d9485a;
-    --moss-green: #6b8e23;
-  }
-}
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url('images/fish.gif');
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
-.products-main {
-  width: 1000px;
-  height: 750px;
+main {
+  /* Reset e Box Model */
+  width: fit-content;
+  height: fit-content;
   padding: 20px;
   border-radius: 20px;
   overflow-y: auto;
-  text-align: center;
-  padding-top: 66px;
-  background-color: var(--primary-red);
-  color: var(--white);
-}
 
-.products-main::-webkit-scrollbar {
-  width: 12px;
-}
-
-.products-main::-webkit-scrollbar-track {
-  background: var(--primary-red);
-  border-radius: 10px;
-}
-
-.products-main::-webkit-scrollbar-thumb {
-  background: var(--secondary-red);
-  border-radius: 10px;
-  border: 2px solid var(--primary-red);
-}
-
-.products-main::-webkit-scrollbar-thumb:hover {
-  background: var(--hover-red);
-}
-
-
-.products-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--beige);
-}
-
-
-.products-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.product-item {
-  border: 2px solid var(--white);
-  margin: 40px auto;
-  padding: 16px; 
-  border-radius: 15px;
-  background-color: rgba(139, 24, 24, 0);
-  color: var(--foreground);
-  width: 80%; 
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.product-item img {
-  max-width: 160px; 
-  height: auto;
-  border-radius: 10px;
-  border: 3px solid var(--black);
-  margin-bottom: 10px;
-}
-
-.product-title {
-  font-size: 1.5rem; 
-  margin: 10px 0;
-  color: var(--beige);
-  font-weight: bold;
-}
-
-.product-price,
-.product-description,
-.product-category,
-.product-rating {
-  font-size: 0.9rem; 
-  margin: 5px 0;
-  color: white; 
-}
-
-.product-price strong,
-.product-description strong,
-.product-category strong,
-.product-rating strong {
-  color: var(--secondary-red);
-}
-
-
-.error {
-  color: var(--secondary-red);
-  text-align: center;
-  margin-top: 20px;
-}
-
-.loading {
-  color: var(--moss-green);
-  text-align: center;
-  margin-top: 20px;
-}
-
-.no-data {
-  color: gray;
-  text-align: center;
-  margin-top: 20px;
+  /* Fundo */
+  background: whitesmoke;
 }

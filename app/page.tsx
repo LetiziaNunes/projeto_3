@@ -3,13 +3,9 @@ import Link from 'next/link'
 
 export default function page() {
   return <>
-  <div className='Cabeca'>
-    <p>
-    <Link href="/tecnologias">Tecnologias</Link>
-    </p>
-    <p>
-    <Link href="/produtos">Produtos</Link>
-    </p>
-    </div>
+  <div className="Hehe">
+    <p>Welcome to my first project in React and Next.js, I hope you enjoy it!</p>
+
+  </div>
   </>
 }

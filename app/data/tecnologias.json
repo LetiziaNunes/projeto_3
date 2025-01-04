@@ -1,0 +1,69 @@
+[
+    {
+      "title": "HTML",
+      "image": "/images/buhhh.png",
+      "description": "Linguagem de marcação para a estruturação de páginas web.",
+      "rating": 4.5
+    },
+    {
+      "title": "CSS",
+      "image": "/images/cssLogo.jng",
+      "description": "Linguagem de estilo para personalização visual de páginas web.",
+      "rating": 4.7
+    },
+    {
+      "title": "JavaScript",
+      "image": "/images/javascript-logo.png",
+      "description": "Linguagem de programação para interatividade em páginas web.",
+      "rating": 5.0
+    },
+    {
+      "title": "JSON",
+      "image": "/images/json-logo.png",
+      "description": "Formato leve de intercâmbio de dados.",
+      "rating": 4.8
+    },
+    {
+      "title": "API RESTful",
+      "image": "/images/api-logo.png",
+      "description": "Padrão de arquitetura para desenvolvimento de APIs escaláveis.",
+      "rating": 4.9
+    },
+    {
+      "title": "Swagger",
+      "image": "/images/swagger-logo.png",
+      "description": "Ferramenta para documentação e teste de APIs REST.",
+      "rating": 4.6
+    },
+    {
+      "title": "GitHub",
+      "image": "/images/github-logo.png",
+      "description": "Plataforma para hospedagem e controle de versão de código.",
+      "rating": 5.0
+    },
+    {
+      "title": "Codespaces",
+      "image": "/images/codespaces-logo.png",
+      "description": "Ambiente de desenvolvimento baseado na nuvem integrado ao GitHub.",
+      "rating": 4.8
+    },
+    {
+      "title": "React.js",
+      "image": "/images/react-logo.png",
+      "description": "Biblioteca JavaScript para construção de interfaces de usuário.",
+      "rating": 5.0
+    },
+    {
+      "title": "Next.js",
+      "image": "/images/nextjs-logo.png",
+      "description": "Framework React para desenvolvimento de aplicações web modernas.",
+      "rating": 4.9
+    },
+    {
+      "title": "Vercel",
+      "image": "/images/vercel-logo.png",
+      "description": "Plataforma para hospedagem de aplicações web otimizadas.",
+      "rating": 4.8
+    }
+  ]
+  
