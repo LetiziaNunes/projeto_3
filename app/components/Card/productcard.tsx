@@ -1,7 +1,16 @@
-import { Product } from '../../models/interfaces';
 import React from 'react';
+import { Product } from '../../models/interfaces';
 
-const ProductCard: React.FC<Product> = ({ id, title, price, description, category, image, rating }) => {
+const ProductCard: React.FC<Product & { onAddToCart: () => void }> = ({
+  id,
+  title,
+  price,
+  description,
+  category,
+  image,
+  rating,
+  onAddToCart,
+}) => {
   return (
     <li className="border rounded-lg shadow-md p-4 bg-white mt-2 flex flex-col justify-between transform transition-transform duration-200 hover:scale-105 hover:shadow-lg hover:border-red-500">
       <img
@@ -26,19 +35,14 @@ const ProductCard: React.FC<Product> = ({ id, title, price, description, categor
           <strong>Rating:</strong> {rating.rate} ({rating.count} reviews)
         </p>
       )}
+      <button
+        onClick={onAddToCart}
+        className="bg-red-500 text-white px-4 py-2 rounded shadow-md hover:bg-red-600 transition mt-2"
+      >
+        Add to Cart
+      </button>
     </li>
   );
 };
 
-const ProductList: React.FC<{ products: Product[] }> = ({ products }) => {
-  return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mt-8">
-      {products.map(product => (
-        <ProductCard key={product.id} {...product} />
-      ))}
-    </ul>
-  );
-};
-
 export default ProductCard;
-export { ProductList };
